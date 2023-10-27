@@ -1,10 +1,10 @@
-Ecommerce fake
+### Ecommerce fake
 
 Proyecto realizado para pruebas 
 
 This is a Next.js project bootstrapped with create-next-app.
 
-Getting Started
+### Getting Started
 First, run the development server:
 
 npm run dev
