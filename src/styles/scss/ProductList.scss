@@ -50,7 +50,10 @@
 .product-title {
   height: 30px;
   line-height: 1.6;
-  font-size: 12px;
+  font-size: 14px;
+  overflow: hidden;
+  text-wrap: nowrap;
+  text-overflow: ellipsis;
 
   @media only screen and (max-width: 1025px) {
     height: 50px;

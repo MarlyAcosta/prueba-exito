@@ -7,3 +7,7 @@ export const saveCarrito = (cart) => {
 export const getCarrito = () => {
     return JSON.parse(localStorage.getItem('cart') || '[]');
 }
+
+export const deleteCarrito = () => {
+    localStorage.setItem('cart', '[]');
+}

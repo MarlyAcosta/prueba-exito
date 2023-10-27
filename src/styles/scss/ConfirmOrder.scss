@@ -1,4 +1,4 @@
-/* Estilos para el contenedor principal */
+
 main {
     display: flex;
     justify-content: center;
@@ -6,7 +6,6 @@ main {
     height: 100vh;
 }
 
-/* Estilos para la sección */
 .page_success {
     text-align: center;
     width: 70%;
@@ -17,28 +16,25 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilos para los datos de la página */
 .page_data {
     font-weight: bold;
     color: #333;
 }
 
-/* Estilos para el botón */
 .page_btn {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #4CAF50;
+    background-color:  rgb(235, 123, 59);;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
 }
 
 .page_btn:hover {
-    background-color: #45a049;
+    background: rgb(185, 75, 11);
 }
 
-/* Estilos para el pie de página */
 footer {
-    margin-top: 50px; /* Ajusta según sea necesario */
+    margin-top: 50px;
 }

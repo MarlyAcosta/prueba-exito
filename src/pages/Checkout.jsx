@@ -8,7 +8,7 @@ import '../styles/scss/Checkout.scss';
 export const Checkout = () => {
 
     const navigate = useNavigate();
-    const { cart, totalPrice } = useContext(AppContext);
+    const { cart, totalPrice, clearToCart } = useContext(AppContext);
     const [datos, setDatos] = useState([
         { campo: 'email', value: '' },
         { campo: 'nombre', value: '' },
@@ -36,7 +36,14 @@ export const Checkout = () => {
     }
 
     const handleValidation = (e) => {
-        window.location.replace(`/success/${datos[0].value}/${datos[2].value}/${datos[1].value}`);
+        const goConfirm = datos.find(item => item.value === '')
+        if(!goConfirm){
+            clearToCart();
+            window.location.replace(`/success/${datos[0].value}/${datos[2].value}/${datos[1].value}`);
+        } else{
+            console.log(goConfirm)
+            alert('Debes llenar todos los campos para finalizar la compra')
+        }
     }
 
     return (
@@ -45,8 +52,8 @@ export const Checkout = () => {
                 <div className='row content-checkout'>
                     <section className='column datos-user'>
                         <span className="input__label">Correo:</span>
-                        <input id='email' className="input" type="email" onBlur={handleOnChange} />
-                        <p id='email-input' style={{ color: "red", display: 'none' }}>{'Debe completar este campo'}</p>
+                        <input id='email-input' className="input" type="email" onBlur={handleOnChange} />
+                        <p id='email' style={{ color: "red", display: 'none' }}>{'Debe completar este campo'}</p>
                         <span className='input__label'>Nombre:</span>
                         <input id='nombre-input' className='input' type="text" onBlur={handleOnChange} />
                         <p id='nombre' style={{ color: "red", display: 'none' }}>{'Debe completar este campo'}</p>

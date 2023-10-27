@@ -5,7 +5,7 @@ import { Product } from './Product';
 import '../styles/scss/Cart.scss'
 
 export const Cart = () => {
-    const { cart, totalPrice } = useContext(AppContext)
+    const { cart, totalPrice, clearToCart } = useContext(AppContext)
 
     return (
         <div id='shop-cart' className="cart">
@@ -26,6 +26,9 @@ export const Cart = () => {
                                 Finalizar Compra
                             </div>
                         </Link>
+                        <div className='go-checkout' onClick={clearToCart}>
+                               Vaciar carrito
+                        </div>
                     </div>
                 </>)
                 :

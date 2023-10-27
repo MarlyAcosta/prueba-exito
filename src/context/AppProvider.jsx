@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { AppContext } from './AppContext'
-import { getCarrito } from '../utils/saveCarrito';
+import { getCarrito, deleteCarrito } from '../utils/saveCarrito';
 
 export const AppProvider = ({ children }) => {
 
@@ -113,6 +113,7 @@ export const AppProvider = ({ children }) => {
 
   const clearToCart = () => {
     setCart([])
+    deleteCarrito();
   }
 
   useEffect(() => {
