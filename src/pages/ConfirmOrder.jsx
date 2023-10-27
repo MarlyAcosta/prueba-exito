@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { Footer } from '../components';
-// import '../styles/scss/ConfirmOrder.scss'
+import '../styles/scss/ConfirmOrder.scss'
 
 export const ConfirmOrder = () => {
 
