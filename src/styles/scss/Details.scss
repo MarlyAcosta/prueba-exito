@@ -1,0 +1,176 @@
+.main-product {
+    margin: 15vh 4%;
+}
+
+.miga-de-pan {
+    text-transform: capitalize;
+    font-size: 12px;
+
+    a {
+        text-decoration: none;
+        color: #979899;
+
+        &:hover {
+            color: #696969;
+            text-decoration: underline;
+        }
+    }
+}
+
+.row {
+    width: 100%;
+
+    a {
+        max-width: 19%;
+    }
+
+    p {
+        max-width: 60%;
+    }
+}
+
+.container-img-product {
+    background: #fff;
+    object-fit: cover;
+    border-radius: 1rem;
+    aspect-ratio: 1;
+    width: 100%;
+    height: 50vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    img {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        object-fit: contain;
+        width: 50%;
+        height: 90%;
+    }
+}
+
+.product-infogeneral {
+    padding: 0 10%;
+    max-width: 60%;
+}
+
+.product-details {
+    max-width: 40%;
+}
+
+.group-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 17px;
+    justify-content: left;
+}
+
+.price {
+    font-size: 17px;
+    justify-content: left;
+}
+
+.description {
+    font-size: 14px;
+}
+
+.start {
+    width: 3%;
+}
+
+.start-rating {
+    justify-content: left !important;
+}
+
+.rating {
+    font-size: 14px;
+}
+
+.contador,
+.agregar,
+.checkout {
+    height: 40px;
+    width: 100%;
+
+    @media only screen and (max-width: 1025px) {
+        height: 30px;
+    }
+}
+
+.pdp {
+    width: 80% !important;
+}
+
+.contador span,
+.agregar span {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkout {
+    background-color: #3b3b3b;
+    border-radius: 5px;
+    color: #fff;
+
+    &:hover {
+        background-color: #000;
+    }
+}
+
+.agregar {
+    background-color: #f78523;
+    margin: 15px 0;
+    border-radius: 5px;
+    color: #fff;
+
+
+    &:hover {
+        background-color: #fd9943;
+    }
+}
+
+.count {
+    font-size: 20px;
+}
+
+.plus {
+    justify-content: left;
+    background-color: #d8d7d7;
+
+    &:hover {
+        background-color: #b9b9b9;
+    }
+}
+
+.minus {
+    justify-content: end;
+    background-color: #d8d7d7;
+
+    &:hover {
+        background-color: #b9b9b9;
+    }
+}
+
+.cantidad {
+    max-width: 70%;
+    width: 100%;
+    padding: 0 33.5%;
+    background-color: #d8d8d8;
+
+    &:hover {
+        background-color: #cccaca;
+    }
+}
+
+.info-product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}

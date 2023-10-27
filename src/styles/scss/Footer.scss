@@ -1,0 +1,28 @@
+.footer {
+    margin-top: 100px;
+    width: 100vw;
+    height: 60px;
+    text-align: center;
+    background: #f7f7f7;
+    color: white;
+    font-size: 15px;
+    bottom: 0;
+    position: absolute;
+}
+
+.footer-container {
+    max-width: 100%;
+    margin-top: 15px;
+}
+
+.footer-title {
+    color: #373737;
+}
+
+.footer-link a {
+    color: #373737;
+
+    &:hover {
+        color: #000000;
+    }
+}
