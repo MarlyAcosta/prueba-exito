@@ -1,20 +1,15 @@
 .header {
-    background-color: #333;
-    color: #fff;
-    /* padding: 20px 0; */
-}
-
-.navbar-list {
-    list-style: none;
+    background-color: #f7f7f7;
+    width: 100%;
+    height: 50px;
     display: flex;
-    justify-content: space-between;
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.navbar-item {
-    padding: 0 15px;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+    right: 0;
+    top: 0;
 }
 
 .navbar-collapse {
@@ -27,64 +22,81 @@
     margin: 0 auto;
 }
 
+.navbar-list {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    color: #000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    @media only screen and (max-width: 1025px) {
+        &>li{
+            &:last-child,
+            &:first-child {
+                max-width: 18%;
+            }
+        }
+    }
+}
+
+.navbar-item {
+    margin: 0;
+    text-decoration: none;
+    color: #000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .grid {
     max-width: 100%;
 }
 
+.navbar-link a {
+    color: #373737;
 
-.navbar-link {
-    text-decoration: none;
-    color: #fff;
-    font-size: 16px;
-    transition: color 0.3s;
-}
-
-.navbar-link:hover {
-    color: #F08080;
+    &:hover {
+        color: #000000;
+    }
 }
 
 .buscar {
-    padding: 8px;
-    border-radius: 5px;
-    border: none;
+    background: #eeeeee;
+    border: 1px solid #636363;
+    border-radius: 5px 5px 5px 5px;
+    color: #000000;
+    font-size: 12px;
+    padding: 7px 80px;
     margin-right: 10px;
+
+    @media only screen and (max-width: 1025px) {
+        font-size: 10px;
+        padding: 9px;
+        margin-right: 0;
+    }
 }
 
 .buscar-boton {
-    padding: 8px 15px;
-    background-color: hsla(11, 100%, 62.2%, 1);
-    border: none;
-    color: #fff;
+    background: rgb(235, 123, 59);
     border-radius: 5px;
-    cursor: pointer;
-}
+    color: #000000;
+    font-size: 12px;
+    padding: 7px 20px;
 
-.buscar-boton:hover {
-    background-color: hsla(11, 100%, 62.2%, 1);
-}
-
-.carrito {
-    ::before {
-        background: url('/src/assets/carrito.png');
-        content: '';
-    }
-}
-
-/* Media Query para hacer que la navegación sea responsive */
-@media screen and (max-width: 768px) {
-    .navbar-list {
-        justify-content: center;
+    &:hover {
+        background: rgb(185, 75, 11);
     }
 
-    .navbar-item {
-        padding: 5px;
-    }
+    @media only screen and (max-width: 1025px) {
+        font-size: 0px;
+        padding: 13px;
 
-    .buscar {
-        margin: 0;
-    }
-
-    .header {
-        padding: 0;
+        &:before {
+            content: '';
+            background-image: url('');
+        }
     }
 }
